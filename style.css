@@ -1,0 +1,364 @@
+@font-face {
+    font-family: japan;
+    src: url('fonnts.com-jollygoodproperserif-black.otf') format("opentype");
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links>h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.trakteer {
+    width: 164px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #AABCD2;
+    border: none;
+    border-radius: 15px;
+}
+
+div.miring {
+    font-family: "Inter", sans-serif;
+    writing-mode: vertical-lr;
+}
+
+div.miring-content {
+    text-orientation: mixed;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(180deg);
+    word-spacing: 5px;
+}
+
+.shinnieShin {
+    margin-bottom: 7px;
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.copyright {
+    margin-bottom: 7px;
+    font-weight: lighter;
+    opacity: 50%;
+}
+
+.container {
+    width: 7vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 20px;
+    height: 20px;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 200px;
+}
+
+.title {
+    font-family: japan;
+    font-size: 50px;
+    color: #494B6B;
+    width: 500px;
+    line-height: 70px;
+}
+
+.subtitle {
+    font-family: 'inter', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.videos {
+    position: relative;
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    border: red solid 1px;
+    border-radius: 15px;
+    width: 191px;
+    height: 58px;
+}
+
+.videos::after {
+    content: '';
+    background-image: url('./Image/mdi_arrow-right.png');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 20px;
+    transition: background-image 0.5s ease;
+}
+
+.videos:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.videos:hover::after {
+    background-image: url('./Image/mdi_arrow-right-white.png');
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    left: 50%;
+    width: 70vw;
+    height: 140vh;
+    border-radius: 50%;
+    background-color: #AABCD2;
+}
+
+.mask-group {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 65%;
+}
+
+.secondContainer {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+    background-color: white;
+    padding: 20px;
+}
+
+.about {
+    font-family: 'japan';
+    margin-left: 200px;
+    color: #494B6B;
+}
+
+.desc {
+    font-family: 'inter', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    opacity: 100%;
+    margin-top: 20px;
+}
+
+.videoss {
+    font-family: 'japan';
+    margin-left: 200px;
+    color: #494B6B;
+}
+
+.thirdBody {
+    margin: 20px 20px 20px 20px;
+}
+
+.row1,
+.row2 {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    width: 350px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.videoCard {
+    width: 300px;
+    height: 200px;
+}
+
+.videoTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.fourthContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.course {
+    font-family: 'japan';
+    color: #494B6B;
+    margin-left: 200px;
+}
+
+.courseBox {
+    font-family: 'inter', sans-serif;
+    background-color: #EACDC2;
+    border-radius: 15px;
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
+}
+
+.enroll {
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+
+.courseDesc {
+    font-weight: lighter;
+}
+
+.favorite {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 35px;
+}
+
+.favorite::before {
+    content: '';
+    background-image: url('./Image/mi_favorite.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -35px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card {
+    display: none;
+}
+
+.card-1 {
+    width: calc(20vw / 1.6);
+    height: calc(55vh / 1.6);
+    opacity: 50%;
+}
+
+.card-2 {
+    width: 20vw;
+    height: 55vh;
+}
+
+.card-3 {
+    width: calc(20vw / 1.6);
+    height: calc(55vh / 1.6);
+    opacity: 50%;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.next {
+    font-size: 50px;
+}
+
+.prev {
+    font-size: 50px;
+}
+
+.next,
+.prev {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dotDark,
+.dotRed,
+.crossRed,
+.dotWithWhite1,
+.dotWithWhite2,
+.crossDark {
+    position: absolute;
+}
+
+.dotWithWhite1 {
+    left: 15vw;
+    top: 250px;
+}
+
+.dotWithWhite2 {
+    left: 55vw;
+    top: 750px;
+}
+
+.crossDark {
+    left: 45vw;
+    top: 200px;
+}
+
+.dotDark {
+    left: 25vw;
+    top: 750px;
+}
+
+.dotRed {
+    left: 56vw;
+    top: 400px;
+}
+
+.crossRed {
+    left: 43vw;
+    top: 600px;
+}
